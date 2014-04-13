@@ -50,20 +50,22 @@ a img {
   border: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /*
  * Retina Sprites for Compass
- * by:              Gaya Kessler
- * last update:     03/11/14
+ * by:              Andreas Sahle
+ * forked from:     Retina-Sprites-for-Compass by Gaya Kessler
+ * @see: https://github.com/Gaya/Retina-Sprites-for-Compass
+ * last update:     04/13/14
  *
  * Usage:
- * 1. create two folders in your image directory (in this case 'icons' and 'icons-2x').
- * 2. adjust the foldernames defined below if you use different names.
- * 3. create sprite images for pixel ratio 1 screens and put them in the first folder.
- * 4. create sprite images for pixel ratio 2 screens and put them in the second folder, use the same filenames.
+ * 1. create a folder in your image directory (in this case 'icons').
+ * 2. create sprite images for pixel ratio 1 screens and put them in the folder.
+ * 4. create sprite images for pixel ratio 2 screens and put them in the folder,
+ *    use the same filenames with a '-2x' suffix.
  * 5. use the sprite-image in your Sass/Scss using: '@include use-sprite(<sprite-name>)'
  */
 /*
@@ -100,72 +102,58 @@ p {
 }
 
 .sprite1 {
-  background-image: url('../images/icons-s44ec97e90e.png');
-  background-position: 0 0;
+  background-image: url('../images/icons-s5c7fdc1d93.png');
+  background-position: -25px 0;
   background-repeat: no-repeat;
   overflow: hidden;
-  display: block;
   height: 25px;
   width: 25px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   .sprite1 {
-    background-image: url('../images/icons-2x-s93dce01c9d.png');
-    background-size: 45px 95px;
-    background-position: 0 0;
+    background-size: 25px 85px;
+    background-position: 0 -60px;
     height: 25px;
     width: 25px;
   }
 }
 
 .sprite2 {
-  background-image: url('../images/icons-s44ec97e90e.png');
-  background-position: 0 -25px;
+  background-image: url('../images/icons-s5c7fdc1d93.png');
+  background-position: 0 0;
   background-repeat: no-repeat;
   overflow: hidden;
-  display: block;
   height: 25px;
   width: 25px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   .sprite2 {
-    background-image: url('../images/icons-2x-s93dce01c9d.png');
-    background-size: 45px 95px;
-    background-position: 0 -25px;
+    background-size: 25px 85px;
+    background-position: 0 -35px;
     height: 25px;
     width: 25px;
   }
 }
 
 .sprite3 {
-  background-image: url('../images/icons-s44ec97e90e.png');
-  background-position: 0 -50px;
+  background-image: url('../images/icons-s5c7fdc1d93.png');
+  background-position: 0 -25px;
   background-repeat: no-repeat;
   overflow: hidden;
-  display: block;
   height: 45px;
   width: 45px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  .sprite3 {
-    background-image: url('../images/icons-2x-s93dce01c9d.png');
-    background-size: 45px 95px;
-    background-position: 0 -50px;
-    height: 45px;
-    width: 45px;
-  }
 }
 
 .background {
   width: 100%;
   height: 200px;
-  background-image: url('../images/background.gif?1382707264');
+  background-image: url('../images/background.gif?1397389149');
   margin: 10px 0px;
   clear: both;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   .background {
-    background-image: url('../images/background-2x.gif?1382707264');
+    background-image: url('../images/background-2x.gif?1397389149');
     background-size: 25px 25px;
   }
 }

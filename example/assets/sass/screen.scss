@@ -28,11 +28,11 @@ p {
 }
 
 .sprite1 {
-    @include use-sprite("sprite1");
+    @include use-sprite(sprite1, true);
 }
 
 .sprite2 {
-    @include use-sprite("sprite2");
+    @include use-sprite("sprite2", true);
 }
 
 .sprite3 {
